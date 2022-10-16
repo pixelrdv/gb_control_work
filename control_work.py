@@ -1,16 +1,27 @@
 # -*- coding: utf-8 -*-
 
 def get_list() -> list:
-    pass
+    t = True
+    result = []
+    print("Введите элементы по одному. Чтобы закончить ввод нажмите просто ENTER")
+    while t:
+        el = input()
+        if el == "":
+            return result
+        result.append(el)
 
 
 def sort_list(l: list) -> list:
-    pass
+    result = []
+    for el in l:
+        if len(el) < 4:
+            result.append(el)
+    return result
 
 
 if __name__ == '__main__':
-    result = list()
-
     strings_list = get_list()
-    result = sort_list()
-    print(result)
+    print("ввели: ", strings_list)
+
+    result = sort_list(strings_list)
+    print("получили", result)
