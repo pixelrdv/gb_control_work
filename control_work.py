@@ -24,4 +24,4 @@ if __name__ == '__main__':
     print("ввели: ", strings_list)
 
     result = sort_list(strings_list)
-    print("получили", result)
+    print("получили:", result)
